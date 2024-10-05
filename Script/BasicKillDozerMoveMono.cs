@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,6 +52,17 @@ public class BasicKillDozerMoveMono : MonoBehaviour
         m_moveForwardPercent = percentBackForward11;
     }
 
+
+    public void SetToLeftDirectionWithPercent(float percent) { 
+    
+        SetPercentLeftRightTo(-percent);
+    }
+
+    public void SetToRightDirectionWithPercent(float percent) { 
+    
+        SetPercentLeftRightTo(percent);
+    }
+
     /// <summary>
     /// It allows to rotate the killdozer left or right in percentage.
     /// </summary>
@@ -93,4 +105,5 @@ public class BasicKillDozerMoveMono : MonoBehaviour
             * m_moveForwardPercent);
 
     }
+
 }
