@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.toytank",                              
+  "displayName": "Toy Tank Tread",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Code to move object as tank in your game with a demo of the KillDozer in it.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"Eloi Stree",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_10_05_KidToyTankTreadModeCode.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
