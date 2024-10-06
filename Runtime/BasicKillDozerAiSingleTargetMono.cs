@@ -11,6 +11,11 @@ public class BasicKillDozerAiSingleTargetMono : MonoBehaviour
     public Transform m_whatToReach;
 
 
+
+    [SerializeField]
+    [Tooltip("Stop Moving Forward")]
+    float m_stopMovingForward=0.05f;
+
     [Range(0, 85)]
     [SerializeField]
     [Tooltip("It is just to see if it is in front and not on the side. So it is limited to 85° ")]
@@ -46,6 +51,21 @@ public class BasicKillDozerAiSingleTargetMono : MonoBehaviour
             return;
         }
 
+        Vector3 targetPosition = m_whatToReach.position;
+        Vector3 killDozerPosition = m_killDozer.position;
+        targetPosition.y = 0;
+        killDozerPosition.y = 0;
+        float distance= Vector3.Distance(targetPosition, killDozerPosition);
+        if (distance < m_stopMovingForward)
+        {
+            m_killDozerToAffect.SetPercentBackForwardTo(0);
+            m_killDozerToAffect.SetToLeftDirectionWithPercent(0);
+
+            return;
+        }
+        m_killDozerToAffect.SetPercentBackForwardTo(1);
+
+
         m_killDozerPosition = m_killDozer.position;
         m_whatToReachPosition = m_whatToReach.position;
 
@@ -73,14 +93,14 @@ public class BasicKillDozerAiSingleTargetMono : MonoBehaviour
             m_killDozerToAffect.SetToLeftDirectionWithPercent(m_rotateSpeedAsPercent);
         }
 
-        if(isInFrontOfKillDozer)
-        {
-            m_killDozerToAffect.SetPercentBackForwardTo(1);
-        }
-        else
-        {
-            m_killDozerToAffect.SetPercentBackForwardTo(0);
-        }
+        //if(isInFrontOfKillDozer)
+        //{
+        //    m_killDozerToAffect.SetPercentBackForwardTo(1);
+        //}
+        //else
+        //{
+        //    m_killDozerToAffect.SetPercentBackForwardTo(0);
+        //}
 
         Debug.DrawLine(m_killDozer.position, m_whatToReach.position, Color.red);
         Debug.DrawLine(m_killDozer.position, m_killDozer.position + m_killDozer.forward, Color.red);
