@@ -8,10 +8,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 525120542164927228, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 525120542164927228, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 525120542164927228, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171954238276891205, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8514167
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171954238276891205, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5055805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171954238276891205, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4373419
+      objectReference: {fileID: 0}
     - target: {fileID: 2735950805804821981, guid: c1d4d06e77d1d28449db239b1ff04a5b,
         type: 3}
       propertyPath: m_Name
       value: Kill Dozer With Target Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435599203618534814, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66935825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435599203618534814, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3841383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435599203618534814, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.76969963
       objectReference: {fileID: 0}
     - target: {fileID: 4480194077740275274, guid: c1d4d06e77d1d28449db239b1ff04a5b,
         type: 3}
@@ -67,6 +112,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_frontAngle
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667124972815952681, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0759566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667124972815952681, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.41620392
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667124972815952681, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15263908
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977266775737573862, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.29132178
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977266775737573862, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2903394
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977266775737573862, guid: c1d4d06e77d1d28449db239b1ff04a5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.76969963
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1906896976308101088, guid: c1d4d06e77d1d28449db239b1ff04a5b, type: 3}

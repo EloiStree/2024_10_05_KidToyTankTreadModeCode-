@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 525120542164927228}
+  - {fileID: 3037812902736933701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 109.63, z: 0}
 --- !u!54 &3854807009492388794
@@ -74,10 +75,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moveForwardPercent: 0
-  m_speedPerSecondForward: 5
-  m_speedPerSecondBackward: 1
+  m_speedPerSecondForward: 1
+  m_speedPerSecondBackward: 0.2
   m_rotateLeftRightPercent: 0
   m_rotationSpeed: 180
+--- !u!1 &3650221614027723450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3037812902736933701}
+  - component: {fileID: 173694029889438137}
+  m_Layer: 0
+  m_Name: Kill Dozer Jet Engine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3037812902736933701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650221614027723450}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4480194077740275274}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173694029889438137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650221614027723450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd879a59314d2f240a394ab749a9ac71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rigidbodyToAffect: {fileID: 3854807009492388794}
+  m_forcePush: 10
+  m_forceMode: 1
+  m_enginePowerInPercent: 0
+  m_enginePowerInPercentState: 0
+  m_lerpMultiplicator: 8
+  m_upDirection: {fileID: 4480194077740275274}
+  m_onEngineStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3710753859719155009
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +369,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2171954238276891205}
